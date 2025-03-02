@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT Division</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header style="background-color: rgb(245, 243, 243); width: 1200px; margin: 0 auto;">
+        <img style="margin-left: 40px;" src="./img/ict division logo.png" width="150px" alt="ICT Division">
+        <nav>
+            <ul style="display: flex; list-style: none; gap: 20px; font-weight: 600; margin-left: 70px; border: 1px solid rgba(192, 192, 192, 0.363); padding: 10px 20px; border-radius: 5px; margin-right: 70px; font-size: 13px; background-color: rgba(192, 192, 192, 0.363);">
+                <li>Home</li>
+                <li>Course Module-2020</li>
+                <li>Class Schedule</li>
+                <li>Success Story</li>
+                <li>Attendance</li>
+                <li>FAQ</li>
+                <li>login</li>
+            </ul>
+        </nav>
+       <div style="margin-left: 70px; padding-top: 15px;">
+        <h1 style="color: #E58817;
+        font-size: 18px;
+        margin-bottom: 10px;
+        margin-top: 20px;">Student Registration Form</h1>
+        <hr>
+        <p>Please enter relevent information</p>
+        <small>Mandatory field<span>*</span></small>
+       </div>
+    </header>
+
+
+    <section style="background-color: rgb(245, 243, 243); width: 1200px; margin: 0 auto; display: flex; gap: 60px">
+        
+        <aside class="left-side" style="width: 500px; margin-left: 70px;">
+
+            <form action="">
+               <div>
+                <label for="district">District <small style="font-weight: 300;">(Institute District: Where you want to do your course)<span style="font-weight: bold; font-size: 20px;">*</span></small></label> <br>
+                <select class="select-option" name="district" id="district" "> 
+                    <option value="" selected disabled>--Select One--</option>
+                    <option value="">Dhaka</option>
+                    <option value="">Meherpur</option>
+                    <option value="">Kushtia</option>
+                    <option value="">Sylhet</option>
+                </select> <br>
+               </div>
+
+                <label for="course">Course<span style="font-weight: bold; font-size: 20px;">*</span></label> <br>
+                <select name="district" id="course"> 
+                    <option value="" selected disabled>--Select One--</option>
+                    <option value="">MS Word</option>
+                    <option value="">Graphics Design</option>
+                    <option value="">Web Development</option>
+                    <option value="">Data Entry</option>
+                </select> <br>
+
+                <label for="name">Student Name<span style="font-weight: bold; font-size: 20px;">*</span></label> <br>
+                <input type="text" name="name" id="name" placeholder="Enter your name"> <br>
+
+                <label for="name">Father Name<span style="font-weight: bold; font-size: 20px;">*</span></label> <br>
+                <input type="text" name="name" id="name" placeholder="Enter your father name"> <br>
+
+                <label for="name">Mother Name<span style="font-weight: bold; font-size: 20px;">*</span></label> <br>
+                <input type="text" name="name" id="name" placeholder="Enter your Mother name"> <br>
+
+                <fieldset>
+                    <legend for="name">Date of Birth<span style="font-weight: bold; font-size: 20px;">*</span></legend>
+                   <div class="dob" style=" display: flex;
+                   justify-content: left;
+                   gap: 50px; margin-left: 15px; padding: 10px 0;">
+                    <div>
+                        <label for="day">Day: </label> <br>
+                        <select name="day" id="day">
+                            <option value="" selected disabled>Select</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                        </select>
+                       </div>
+    
+                       <div>
+                        <label for="month">Month: </label> <br>
+                        <select name="month" id="month">
+                            <option value="" selected disabled>Select</option>
+                            <option value="">January</option>
+                            <option value="">February</option>
+                            <option value="">June</option>
+                            <option value="">July</option>
+                            <option value="">September</option>
+                        </select>
+                       </div>
+    
+                       <div>
+                        <label for="year">Year: </label> <br>
+                        <select name="year" id="year">
+                            <option value="" selected disabled>Select</option>
+                            <option value="">2018</option>
+                            <option value="">2019</option>
+                            <option value="">2020</option>
+                            <option value="">2021</option>
+                            <option value="">2022</option>
+                        </select>
+                       </div>
+                   </div>
+                </fieldset>
+
+                <label for="gender">Gender<span style="font-weight: bold; font-size: 20px;">*</span></label>
+                <input type="radio" name="gender" > <label for="gender">Male</label> 
+                <input type="radio" name="gender"> <label for="gender">Male</label> 
+                    <br>
+                <label for="">Physically Handicapped<span style="font-weight: bold; font-size: 20px;">*</span></label>
+                <input type="radio" name="Handicapped" > <label for="Handicapped">Yes</label> 
+                <input type="radio" name="Handicapped"> <label for="Handicapped">No</label> <br>
+
+                <label for="email">Email<span style="font-weight: bold; font-size: 20px;">*</span></label> <br>
+                <input type="email" name="email" id="email" placeholder="Enter your email"> <br>
+                <small>e.g: example@mail.com</small> <br> <br>
+
+                <label for="phone">Phone (Must be 11 Digits)<span style="font-weight: bold; font-size: 20px;">*</span></label> <br>
+                <input type="phone" name="phone" id="phone" placeholder="Enter your phone"> <br>
+                <small>(e.g: 01516872383)</small>
+            </form>
+        </aside>
+
+        <aside class="right-side">
+            <div style="margin-left: 30px;" >
+                <label for="identification">Indentification Type<span>*</span></label> <br>
+                <select name="identification" id="identification">
+                    <option value="" selected disabled>Select One</option>
+                    <option value="">Birth Certificate</option>
+                    <option value="">NID</option>
+                    <option value="">Passport</option>
+                </select> <br>
+                <small>Indentification No. (Must be 10 digits for new NID or 17 digits for old NID. If your national ID is 13 digits, then please add your birth year with the ID as prefix. Example: 1980XXXXXXXXXXX)*</small> <br>
+                <input type="number" name="" id=""> <br>
+
+                <label for="district">Home District<span>*</span></label> <br>
+                <select name="district" id="district">
+                    <option value="" selected disabled>Select One</option>
+                    <option value="">Dhaka</option>
+                    <option value="">Kushtia</option>
+                    <option value="">Jessore</option>
+                </select> <br>
+
+                <label for="upazila">Home District<span>*</span></label> <br>
+                <select name="upazila" id="upazila">
+                    <option value="" selected disabled>Select One</option>
+                    <option value="">Gangni</option>
+                    <option value="">Meherpur sadar</option>
+                    <option value="">Mujibnagar</option>
+                </select> <br>
+
+                <label for="village">Village/House No./Road No./Other Alternative<span>*</span></label> <br>
+                <input type="text" placeholder="Type your address"> <br>
+
+                <label for="post">Post Office<span>*</span></label> <br>
+                <input type="text" placeholder="Type your post office"> <br>
+
+                <label for="village">Educational Qualification<span>* </span><small><strong>(Higher Level)</strong></small></label> <br>
+                <select name="education" id="education">
+                    <option value="" selected disabled>--Select One--</option>
+                    <option value="">SSC</option>
+                    <option value="">HSC</option>
+                    <option value="">Honors</option>
+                </select> <br>
+
+                <label for="computer">Have any computer?*</label>
+                <input type="radio" name="computer" id="computer">
+                <label for="computer">Yes</label>
+                <input type="radio" name="computer" id="computer">
+                <label for="computer">No</label> <br>
+
+                <label for="photograph">Photograph*</label> <br>
+                <input type="file" name="photograph" id="photograph"> <br>
+                <small>(File type must be jpg or jpeg or png. Maximum file size 2 mb.)</small> <br>
+
+                <label for="signature">Signature*</label> <br>
+                <input type="file" name="signature" id="signature"> <br>
+                <small>(File type must be jpg or jpeg or png. Maximum file size 2 mb.)</small> <br>
+
+                <button style="padding: 10px 20px; border-radius: 5px; border: 1px solid gray; margin-top: 15px;">Submit Data</button>
+            </div>
+        </aside>
+    </section>
+</body>
+</html>
